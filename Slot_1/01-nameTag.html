@@ -1,0 +1,163 @@
+<!-- comment: ghi chú -->
+<!-- 
+    HTML: Hypertext markup language
+    ngôn ngữ đánh dấu siêu văn bản
+    ngôn ngữ trang điểm
+    đây khong phải là ngôn ngữ lập trình (for|ifelse|function|class)
+    markdown, xml, PUG, jsx
+-->
+<!-- Document mà muốn hiển thị trên trang wed thì nó cần chạy trên nền tảng 
+     wed page(wed browser) -->
+<!-- khai báo kiểu document đang dùng -->
+<!-- 1 tag(thẻ) có gì: 
+  tag là đơn vị nhỏ nhất trong html
+  <tagName attribute> content </tagName> 
+ -->
+
+<!doctype html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buổi 1</title>
+  </head>
+  <body>
+    <!-- code here -->
+    <!-- bộ heading
+      trong HTML ngta đặt tên cho các tag/thẻ theo vai trò của nó 
+    -->
+    <a href="#chuong2">Bấm vào đi: tới chương 2 đấy</a>
+    <h1>Anh Điệp dz h1</h1>
+    <h2>Anh Điệp dz h2</h2>
+    <h3 style="display: inline">Anh Điệp dz h3</h3>
+    <h4 style="display: inline">Anh Điệp dz h4</h4>
+    <h5>Anh Điệp dz h5</h5>
+    <h6>Anh Điệp dz h6</h6>
+    <!-- h có số càng cao thì hiển thị càng nhỏ
+     thẻ h(heading) dùng để làm title 
+    các thẻ heading đều có display: block
+    block: thẻ mà chiếm trọn hàng, k có thẻ nào có thể cùng hàng với nó đc
+    inline: không có hộp (k viền -> model box(margin|padding|width|height))
+          phải ôm sát nội dung
+     -->
+
+    <!-- p: paragraphs: đoạn văn display: block-->
+    <p>
+      tôi tên là Điệp, nhà tôi ở quận 9
+      &#8194;&#8194;&#8194;&#8194;&#8194;&#8194;&#8194; , <br />3 đời tôi làm
+      gỗ, dến đời tôi làm yangho
+    </p>
+    <p>Hello</p>
+    <!-- nếu mà mình muốn nó theo ý -->
+    <!-- pre: preformated display: block | giữ lại định dạng trước khi format-->
+    <pre>
+tôi tên là Điệp, nhà tôi ở quận 9
+     , 3 đời tôi làm
+      gỗ, dến đời tôi làm yangho</pre
+    >
+
+    <!-- tất cả các tag đều có attribute là style -->
+    <!-- text-align: center/right/left|inherit: kế thừa lại của cha
+      căn giữa chữ -->
+    <p style="text-align: center">Hello</p>
+    <p style="text-align: center; display: inline">Hello</p>
+    <!-- bộ tag formatting bộ tượng hình: display: inline-->
+    <p>
+      <em>xin</em> chào <small>các</small> bạn <del>tao</del>
+      <mark>tôi</mark> là
+      <strong>Điệp đẹp trai</strong>
+    </p>
+    <p>H<sub>2</sub>O</p>
+    <p>H<sup>2</sup>O</p>
+    <p>ax2 + bx + c = 0</p>
+    <!-- 
+      i: italic: nghiên | em: emphasized: nhấn mạnh
+      b: bold: đậm      | strong: mạnh mẽ -->
+
+    <!--  -->
+    <!-- pseudo tag: tag giả |Thẻ không có chức năng gì hết -->
+    <!-- div: divide: display: block -->
+    <!-- span: span: display: inline -->
+
+    <p><span style="font-size: 20px; color: red">Xin</span> chào các bạn</p>
+
+    <!-- Bai 1 -->
+    <div style="text-align: left; color: red">
+      Lòng ta trống lắm, lòng ta sụp <br />
+      Như túp nhà không bốn vách xiêu; <br />
+      Em chẳng cứu giùm, em bỏ mặc <br />
+      Mưa đưa ta đến bến Đìu hiu. <br />
+    </div>
+    <div style="text-align: right; color: blue">
+      Em ở bên mình; sóng gia say,<br />
+      Song le bên ấy với bên này <br />
+      Cũng xa như những bờ xa cách, <br />
+      Không có thuyền qua, không cánh bay <br />
+    </div>
+    <div style="text-align: left; color: red">
+      Ta thấy em xinh, khẽ lắc đầu. <br />
+      Bởi vì ta có được em đâu! <br />
+      Tay kia sẽ ấp nhiều tay khác, <br />
+      Môi ấy vì ai sẽ đượm mầu. <br />
+    </div>
+    <br />
+    <br />
+    <!-- Bai 2 -->
+    <h1>Câu 1: cấu trúc html cơ bản</h1>
+    <h2>Lorem, ipsum</h2>
+    <h3>1.1 lorem ipsum dolor</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, <br />
+      <br />
+      excepturi dolorem. Quidem voluptatem ratione, nulla magni delectus debitis
+      sapiente qui quod numquam maiores, itaque id tempore adipisci aperiam
+      blanditiis consequatur!
+    </p>
+
+    <h3>1.2 lorem ipsum dolor</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, atque.
+      Dolorum itaque accusantium officia, quidem debitis minima. Corrupti
+      ducimus nemo nam, explicabo veniam, consequuntur eos sint accusantium unde
+      quibusdam quis.
+      <br />
+      <br />
+    </p>
+    <h2>2.lorem ipsum dolor</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+      fugit similique itaque earum perferendis, corrupti non tempora quod,
+      laboriosam, dicta quia unde quam at suscipit eum et dolorum autem
+      consectetur. <br />
+
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+      aspernatur qui ratione optio eum odit laborum voluptatum delectus, iusto
+      voluptates sed alias magni exercitationem excepturi itaque sequi. Nam. ab
+      possimus?
+    </p>
+
+    <!-- horizon: đường chân chời -->
+    <hr />
+    <!-- a tag: hyperlinh references | bookmark: đánh dấu -->
+    <h1 id="chuong2">Chuong 2</h1>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+    <p>Hello cac ban</p>
+  </body>
+</html>

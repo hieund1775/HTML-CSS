@@ -1,0 +1,54 @@
+<!-- useless Tag -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* select tag name: chọn đối tượng bằng tagname */
+      p {
+        color: red;
+      }
+
+      p:nth-child(2) {
+        color: blue;
+      }
+      /* id dùng '#' | class dùng '.' */
+      /* select class name: chọn đối tượng bằng class '.'*/
+      .dacbiet {
+        color: pink;
+      }
+      /* xét về tính uy tiên. thì thẻ đc ưu tiên, ưu tiên style ở dưới */
+      /* id thì chỉ 1 tag đc có, truy cập bằng # */
+    </style>
+  </head>
+  <body>
+    <!-- bộ những thẻ vô dụng -->
+    <p>
+      Có một người từng nói rằng "một cây làm chẳng nên non 3 cây chụm lại thì
+      là 3 cây "
+    </p>
+    <p class="dacbiet">
+      Có một người từng nói rằng
+      <q>một cây làm chẳng nên non 3 cây chụm lại thì là 3 cây </q>
+      <!-- q: quote: trích dẫn: display: inline-->
+    </p>
+
+    <p>Công chúa thuộc về <abbr title="là Điệp">người đẹp trai nhất</abbr></p>
+    <!-- abbr: display: inline -->
+
+    <!-- address: p + em: display: block -->
+    <address class="dacbiet">115/13 Đình Phong Phú</address>
+    <!--  -->
+    <!-- cite -->
+    <p class="dacbiet"><cite>Tác phẩm này được vẽ bởi</cite> ViEmpt Van Good</p>
+    <!--  -->
+    <!-- bdo: ~ p -->
+    <bdo dir="rtl">Xin chào mọi người</bdo>
+    <br />
+    <bdo dir="rtl">iougn iom oahc nix</bdo>
+  </body>
+</html>
+<!-- color: đổi màu chữ
+ background-color: đổi màu nền -->
