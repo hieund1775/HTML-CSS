@@ -1,0 +1,65 @@
+<!-- 05-form.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 5: form</title>
+  </head>
+  <body>
+    <!-- code here:  -->
+    <form action="">
+      <div>
+        <label for="username"> User Name: </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="nhập username đi"
+          value="hoangty_votinh809"
+        />
+      </div>
+      <!--  -->
+      <div>
+        <label for="pwd">Password</label>
+        <input type="text" id="pwd" name="pwd" />
+      </div>
+      <!-- một vài input -->
+      <input type="email" />
+      <input type="number" />
+      <input type="range" min="0" max="100" step="10" />
+      <input type="date" />
+      <input type="checkbox" />
+      <!-- một vài input -->
+      <!-- demo radio -->
+      <div>
+        <p>Gender</p>
+        <!-- nam -->
+        <label for="male">Nam</label>
+        <input type="radio" id="male" name="gender" value="m" checked />
+        <!-- nữ -->
+        <label for="female">Nữ</label>
+        <input type="radio" id="female" name="gender" value="f" />
+      </div>
+      <!-- select:option -->
+      <select name="car" id="car">
+        <option value="1">Audi</option>
+        <option value="2">Mustang</option>
+        <option value="3" selected>Porche</option>
+        <!-- mặc định -->
+        <option value="4">Honda Supra Miata Vtec</option>
+      </select>
+      <!-- textarea -->
+      <textarea
+        style="max-width: 100px; min-width: 100px"
+        name=""
+        id=""
+      ></textarea>
+      <!--  -->
+      <fieldset>
+        <legend>Hello</legend>
+        <p>xin chào mọi người</p>
+      </fieldset>
+    </form>
+  </body>
+</html>

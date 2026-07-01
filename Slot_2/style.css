@@ -1,0 +1,41 @@
+/* style.css */
+.demo-btn {
+  color: teal;
+  transition: 0.2s;
+}
+.demo-btn:active {
+  color: blue !important;
+}
+.demo-btn :hover {
+  color: red;
+}
+/* style lại thẻ a thành button */
+.demo-btn2 {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px 0px;
+  transition: 0.4s;
+}
+.demo-btn2:hover {
+  background-color: black;
+  color: white;
+}
+/* text-decoration: size pos style color 
+    tạo đường ngang
+    pos: overline line-thought underline
+    style: dashed dotted solid
+border: size style color
+*/
+/* khái niệm modelbox: trạng thái hộp 
+padding: khoảng từ content -> border
+margin: khoảng từ border -> vật thể bên ngoài
+
+*/
+.demo-img img {
+  cursor: default;
+}

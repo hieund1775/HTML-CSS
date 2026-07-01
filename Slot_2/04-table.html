@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài -4: table</title>
+    <style>
+      .table-demo {
+        margin: 0 auto;
+      }
+      .table-demo,
+      .table-demo td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      .bg-red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- tạo table() -->
+    <table class="table-demo">
+      <tr>
+        <td colspan="2">1</td>
+        <!-- <td>2</td> -->
+        <td colspan="2" rowspan="2">3</td>
+        <!-- <td rowspan="1">4</td> -->
+      </tr>
+      <tr>
+        <td rowspan="3">5</td>
+        <td>6</td>
+        <!-- <td>7</td> -->
+        <!-- <td>8</td> -->
+      </tr>
+      <tr>
+        <!-- <td>9</td> -->
+        <td class="bg-red" colspan="3">10</td>
+        <!-- <td>11</td> -->
+        <!-- <td>12</td> -->
+      </tr>
+      <tr>
+        <!-- <td>13</td> -->
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+      </tr>
+    </table>
+  </body>
+</html>
