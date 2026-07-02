@@ -1,0 +1,103 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* bề ngang thật tế của một box: witdh + 2*border 
+khối 564px hiển thị 4 nút (mỗi nút 2px border)
+    => 564 / 4 - 2
+
+unit size
+đơn vị đo: px | mm | cm
+%: ăn theo cha nó
+[N] em: coi font-size của cha là 1 đơn vị
+[Y] rem: coi font size cảu HTML là 1 đơn vị
+
+*/
+
+/* html {
+    /* 16px * ??? = 1px ddauw về 10 1 rèm là 20pxx đẻ tiền để tính
+  /* font-size: 25rem; */
+/* border:
+    3px,
+    solid thistle; */
+/* font-size: 62.5%;
+}
+body {
+    font-size: 1.6em;
+}
+ */
+.demo-input {
+  outline: none;
+  margin: 3rem;
+  border: 0.1rem solid red;
+  outline: 0.1rem solid blue;
+  outline-offset: 2rem;
+}
+/* outline: size style color 
+outline giống border | chỉ có ở button và input
+model: content> padding 
+    > border > (outline)margin*/
+.demo-border {
+  border: 0.5rem solid teal;
+  border-top: 0.5rem solid teal;
+  border-left: 0.5rem solid rebeccapurple;
+  border-right: 0.5rem solid rosybrown;
+  border-bottom: 0.5rem solid skyblue;
+  border-radius: 0.5rem;
+}
+.circle {
+  border: 0.5rem solid black;
+  width: 5rem;
+  height: 5rem;
+  border-top: 0.5rem solid teal;
+  border-left: 0.5rem solid rebeccapurple;
+  border-right: 0.5rem solid rosybrown;
+  border-bottom: 0.5rem solid skyblue;
+  border-radius: 50%;
+  transition: 1s;
+}
+.circle:hover {
+  transform: rotate(720deg);
+}
+/* triangle: tam giác */
+
+.triangle {
+  width: 5rem;
+  height: 5rem;
+  border-top: 2.5rem solid skyblue;
+  border-left: 2.5rem solid skyblue;
+  border-right: 2.5rem solid skyblue;
+  border-bottom: 2.5rem solid skyblue;
+  /* transparent: ẩn khung đi */
+  transition: 1s;
+}
+.triangle:hover {
+  border-top: 2.5rem solid transparent;
+  border-left: 2.5rem solid transparent;
+  border-right: 2.5rem solid transparent;
+  border-bottom: 2.5rem solid skyblue;
+  transform: rotate(420deg);
+}
+
+/* demo-text */
+.demo-text {
+  color: steelblue;
+  background-color: tomato;
+  font-size: 2rem;
+  text-decoration: 2px underline solid chartreuse;
+  /* direction: rtl; */
+  text-indent: 2rem;
+  /* lùi vào 2 ô */
+  /* letter-spacing: 2rem;
+  word-spacing: 2rem; */
+  /* khoảng cách chữ và từ */
+  line-height: 2.2rem;
+  /* chiều cao từ chữ lên chữ trên */
+  text-shadow: -2px 1px 1px black;
+}
+.demo-text span {
+  vertical-align: top;
+  /* chỉnh dấu chấm lên: top (bth) |sub |sup|middle */
+}
