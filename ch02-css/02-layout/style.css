@@ -1,0 +1,79 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  padding-bottom: 100vh;
+}
+/* vô bài */
+.demo1-bg {
+  background-color: red;
+  height: 100vh;
+}
+.demo2-bg {
+  background-color: aquamarine;
+  /* height: 100vh; */
+  height: 20rem;
+  background-image: url(./img/city.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* vh: view height: chiều dài của trinh duyệt */
+.container {
+  border: 3px solid black;
+  max-width: 128rem;
+  /* nên dùng max-width để 
+  tránh bể layout khi thu nhỏ */
+  height: 50rem;
+  margin: 0 auto;
+}
+
+.banner__session {
+  /* border: 3px solid orange; */
+}
+
+.side-left__banner,
+.side-right__banner {
+  float: left;
+  /* border: 3px solid blue; */
+  padding: 5px;
+}
+.side-left__banner {
+  width: 70%;
+  height: 30rem;
+}
+.side-right__banner {
+  height: 30rem;
+  width: 30%;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.side-right-img__banner {
+  /* border: 3px solid green; */
+  height: 50%;
+  padding-bottom: 5px;
+}
+.side-right-img__banner:nth-last-child(1) {
+  padding-bottom: 0;
+}
+
+.banner__session img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
