@@ -41,17 +41,23 @@ body {
 }
 
 .body-left {
+  float: left;
   background-color: #b1cbbb;
   width: 70%;
   padding: 2rem;
 }
 
 .body-right {
+  float: left;
   background-color: #aeaec7;
   width: 30%;
   padding: 2rem;
 }
-
+.main-body::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .main-body h2 {
   font-size: 2.4rem;
   margin-bottom: 1.5rem;
