@@ -17,3 +17,8 @@ body {
 .container {
   background-color: white;
 }
+
+.header {
+  background-color: #999;
+  padding: 1rem;
+}

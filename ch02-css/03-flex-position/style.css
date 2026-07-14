@@ -1,0 +1,115 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  padding-bottom: 300vh;
+}
+/* chia layout với flex */
+.cha {
+  border: 3px solid blue;
+  display: flex;
+  justify-content: space-between;
+}
+/* justify: trục chính (mặc định là trục ngang)
+  align: trục phụ(mặc định là trục dọc)
+  
+  
+
+
+  content: khoảng cách giữa trục 
+  items: cả khối vận hành
+  */
+.con1 {
+  border: 3px solid red;
+}
+
+.con2 {
+  border: 3px solid teal;
+}
+
+/* position */
+.big-div {
+  border: 3px solid brown;
+  width: 30rem;
+  /* position được ăn theo do small-div có absolute
+  relative là bình thường nhất */
+  position: relative;
+  /*  */
+}
+.small-div {
+  border: 3px solid aquamarine;
+  /* position: relative;
+  top: 5rem;
+  right: 2rem; */
+  /* relative: trạng thái xuất hồn theo nhưng xác còn nằm chỗ cũ. 
+  hình ảnh bị đi nhưng vị trí đánh dấu lúc đầu vẫn còn đó */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /*  */
+  transform: translate(-50%);
+  /* transform: biến dạng
+  translate: biến đổi theo chính nó */
+  /*  */
+}
+/* position: vị trí (khi element nằm k theo quy tắt block)
+  static: tĩnh | mặc định 
+  relative: tương đối > căn theo chính nó lúc static
+  absolute: tuyệt đối > căn theo thằng cha có position khác static
+  fixed: căn theo màn hình của viewer
+  sticky: dính vào màn hình viewer, khi kéo sẽ lôi đi theo
+*/
+.demo-sticky {
+  /* position: fixed;
+  bottom: 1rem;
+  right: 1rem; */
+  position: sticky;
+  top: 0;
+}
+
+/* demo-element: pseudo element
+pseudo tag: tag giả: div span
+pseudo class: link status, :hover, :active :visited :unvisited :focus 
+pseudo element: ::after và ::before
+*/
+.demo-element::before {
+  content: "hi";
+}
+/* btn-demo */
+.btn-demo {
+  outline: none;
+  background: none;
+  border: none;
+  /* border: 1px solid hotpink; */
+  margin: 2rem;
+  padding: 1rem 2rem;
+  color: hotpink;
+  position: relative;
+  transition: 0.3s;
+}
+.btn-demo::after {
+  content: "";
+  background-color: hotpink;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 3px;
+  width: 0%;
+  transition: 0.3s;
+  z-index: -1;
+}
+.btn-demo:hover::after {
+  left: 0;
+  width: 100%;
+}
